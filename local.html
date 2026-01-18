@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan - Local</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalTitulo">Faça seu Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <small class="form-text text-muted d-block">Esqueceu a senha? <a href="#" class="link-underline link-underline-opacity-0">Clique aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar bg-light navbar-expand-md fixed-top py-3 box-shadow">
+    <div class="container-fluid">
+      <!-- Navbar Logo -->
+      <a href="index.html" class="navbar-brand">
+        <img src="./img/caravan.svg" alt="Caravan">
+      </a>
+
+      <!-- Navbar Hamburguer Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Collapsed Itens -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Navbar Items List-->
+        <ul class="navbar-nav ms-auto">
+          <!-- Navbar Item - Dropdown -->
+          <li class="nav-item dropdown">
+            <!-- Dropdown Button -->
+            <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
+            <!-- Dropdown Items List -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="local.html" class="dropdown-item">California</a>
+              <a href="local.html" class="dropdown-item">Paris</a>
+              <a href="local.html" class="dropdown-item">Dublin</a>
+            </div>
+          </li>
+          <!-- Navbar Item -->
+          <li class="nav-item">
+            <a href="planos.html" class="nav-link">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <!-- Modal Button-->
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="inscricao.html" class="btn btn-outline-primary ms-md-2">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Container -->
+  <section class="container">
+    <div class="text-center my-5">
+      <span class="h6 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
+      <h1 class="display-4 text-primary">Descubra Dublin</h1>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="./img/local/foto-1.jpg" alt="Imagem 1">
+        <img class="img-fluid mb-4" src="./img/local/foto-2.jpg" alt="Imagem 2">
+        <img class="img-fluid mb-4" src="./img/local/foto-3.jpg" alt="Imagem 3">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="./img/local/foto-4.jpg" alt="Imagem 4">
+        <img class="img-fluid mb-4" src="./img/local/foto-5.jpg" alt="Imagem 5">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-4" src="./img/local/foto-6.jpg" alt="Imagem 6">
+        <img class="img-fluid mb-4" src="./img/local/foto-7.jpg" alt="Imagem 7">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Container -->
+  <section class="container">
+    <div class="text-center my-5">
+      <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
+      <h1 class="display-4 text-primary">Próximos Eventos</h1>
+    </div>
+      <table class="table table-hover table-responsive-md">
+        <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Evento</th>
+            <th scope="col">Local</th>
+            <th scope="col">Ticket</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julian Baker</td>
+            <td>The Academy</td>
+            <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+          </tr>
+            <th scope="row">23/10</th>
+            <td>Julian Baker</td>
+            <td>The Academy</td>
+            <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+          </tr>
+            <th scope="row">23/10</th>
+            <td>Julian Baker</td>
+            <td>The Academy</td>
+            <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+          </tr>
+            <th scope="row">23/10</th>
+            <td>Julian Baker</td>
+            <td>The Academy</td>
+            <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+          </tr>
+            <th scope="row">23/10</th>
+            <td>Julian Baker</td>
+            <td>The Academy</td>
+            <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+          </tr>
+            <th scope="row">23/10</th>
+            <td>Julian Baker</td>
+            <td>The Academy</td>
+            <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+
+
+
+ <!-- Footer -->
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html" class="link-underline link-underline-opacity-0">Planos</a></li>
+            <li><a href="contato.html" class="link-underline link-underline-opacity-0">Contato</a></li>
+            <li><a href="inscricao.html" class="link-underline link-underline-opacity-0">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html" class="link-underline link-underline-opacity-0">Califórnia</a></li>
+            <li><a href="local.html" class="link-underline link-underline-opacity-0">Paris</a></li>
+            <li><a href="local.html" class="link-underline link-underline-opacity-0">Dublin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com</li>
+            <li>21 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled d-grid gap-2">
+            <li><a href="#" class="btn btn-outline-secondary mb-2 btn-sm w-100" style="max-width: 140px;">Facebook</a></li>
+            <li><a href="#" class="btn btn-outline-secondary mb-2 btn-sm w-100" style="max-width: 140px;">Twitter</a></li>
+            <li><a href="#" class="btn btn-outline-secondary btn-sm mb-2 w-100" style="max-width: 140px;">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan @ 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="scrip.js"></script>
+</body>
+</html>
