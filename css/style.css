@@ -12,6 +12,10 @@ body {
   background-size: cover;
 }
 
+#perguntasFrequentesContainer .hr {
+  margin: .5rem 0;
+}
+
 @media (max-width: 767px) {
   #home-quote .display-4 {
     font-size: 2.5rem
