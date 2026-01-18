@@ -8,6 +8,32 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalTitulo">Faça seu Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <small class="form-text text-muted d-block">Esqueceu a senha? <a href="#" class="link-underline link-underline-opacity-0">Clique aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar bg-light navbar-expand-md fixed-top py-3 box-shadow">
     <div class="container-fluid">
@@ -45,7 +71,8 @@
             <a href="contato.html" class="nav-link">Contato</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Login</a>
+            <!-- Modal Button-->
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
           </li>
           <li class="nav-item">
             <a href="inscricao.html" class="btn btn-outline-primary ms-md-2">Inscreva-se</a>
