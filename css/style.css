@@ -17,6 +17,10 @@ body {
   padding-bottom: 0px;
 }
 
+textarea {
+  resize: none;
+}
+
 #home-quote {
   background: url('../img/bg-quote.jpg')center center;
   background-size: cover;
